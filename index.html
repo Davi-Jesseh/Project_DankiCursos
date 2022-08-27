@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danki Code</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/> 
+</head>
+<body>
+
+    <section class="options_mobile">
+        <input class="campus" value="CAMPUS" type="button">
+        <input class="minha_conta" value="MINHA CONTA" type="button">
+        <a style="color:#a996c7 ;" href="#">Sair</a>
+    </section>
+    <header>
+        <div class="container">
+        <div class="content_center">
+        <a href="#"><img class="logo" src="images/danki_header.png"></a>
+        <nav class="nav_desktop">
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Cursos</li></a>
+                <a href="#"><li>Plano Vitalício</li></a>
+                <a href="#"><li>Certificados</li></a>
+                <a href="#"><li>Marketplace</li></a>
+                <a href="#"><li>Fórum</li></a>
+                <a href="#"><li>Ensine</li></a>
+                <a href="#"><li>Blog</li></a>                
+            </ul>
+        </nav><!---nav_desktop-->
+        <section class="options">
+        <input class="campus" value="CAMPUS" type="button">
+        <input class="minha_conta" value="MINHA CONTA" type="button">
+        <a style="color:#a996c7 ;" href="#">Sair</a>
+        </section>
+
+        <nav class="nav_mobile">
+            <h2><i class="fa fa-bars"></i></h2>
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Cursos</li></a>
+                <a href="#"><li>Plano Vitalício</li></a>
+                <a href="#"><li>Certificados</li></a>
+                <a href="#"><li>Marketplace</li></a>
+                <a href="#"><li>Fórum</li></a>
+                <a href="#"><li>Ensine</li></a>
+                <a href="#"><li>Blog</li></a>                
+            </ul>
+        </nav><!---nav_mobile-->    
+        </div><!---content_center-->
+        
+    </div><!--container-->
+    </header> 
+
+    <section class="search-cursos">
+        <div class="container">
+            <div class="input-pesquisa">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Pesquise por Cursos e Pacotes" type="text">
+            </div><!----input-pesquisa---->
+            
+            <div class="blocos-search">
+                <div class="bloco-web">
+                    <h2><i class="fa-solid fa-desktop"></i>Web e Mobile</h2>
+                </div><!---bloco-web--->
+                <div class="bloquinho-search">
+                    <span>31 Curso(s)</span>
+                </div><!----bloquinho-search--->
+                
+            </div><!---bloco-search--->
+        </div><!---container-->
+    </section><!----search-curso---->
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('.nav_mobile h2').click(function(){
+        $('.nav_mobile ul').slideToggle();
+    });
+</script>

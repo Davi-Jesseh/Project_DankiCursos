@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+
+:root{
+    --main_color:#5e3ea1;
+    --roxo_color:#665fb3;
+    --gray_color:#a996c7;
+    
+}
+
+.container{
+    max-width: 1400px;
+    padding: 0 2%;
+}
+
+/* ==== Header ==== */
+
+header{
+    width: 100%;       
+    background-color: var(--main_color);
+    padding: 20px 0;    
+}
+
+.content_center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav_desktop{
+    margin-left: 15px;
+}
+.nav_desktop a li{
+    display: inline-block;
+    color: white;
+    transition: all ease 0.4s;
+    padding: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.nav_desktop a li:hover{
+    color: #a996c7;
+}
+
+.nav_mobile{
+    display: none;
+
+}
+
+.nav_mobile a li{
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1em;
+    font-weight: 700;   
+}
+
+.nav_mobile a li:hover{
+    color: #a996c7;
+}
+
+.nav_mobile ul{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 154px;
+    left: 0;
+    background-color:#eee;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.options{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    
+}
+header input{
+    padding: 5px 19px;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 11px;
+    cursor: pointer;   
+    
+}
+
+.campus{
+    background-color: white;
+    border: 1px solid white;
+    color: #5e3ea1;
+}
+
+.minha_conta{
+    color: white;
+    background-color: var(--main_color);
+    border: 1px solid white;
+}
+
+.options_mobile{
+    display: none;
+    
+
+}
+
+/* ==== Header END ==== */
+
+/* ==== Search-Cursos ==== */
+
+.search-cursos{
+    width: 100%;
+}
+
+.input-pesquisa{
+    padding: 10px 0;
+}
+
+.input-pesquisa input{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+
+
+@media only screen and (max-width: 1222px){
+    header{
+        padding: 20px 10px;
+    }
+    .nav_mobile{
+        display: block;
+    }
+
+    .nav_mobile h2 i{
+        color: white;
+        
+    }
+
+   
+
+    .nav_desktop{
+        display: none;
+    }
+
+    .options{
+        display: none;
+    }
+
+    .options_mobile{
+        display: block;
+        width: 100%;
+        background-color: #4c3282;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .options_mobile input{
+        padding: 5px 19px;
+        border-radius: 15px;
+        font-weight: 700;
+        font-size: 11px;
+        cursor: pointer;
+        
+    }
+
+    .minha_conta{
+        background-color: #4c3282;
+    }
+
+
+}
